@@ -1,25 +1,32 @@
 
-<!DOCTYPE html><html lang='en'><head>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>
-<title>Paul Lewis - SOC Cybersecurity Portfolio</title>
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Paul Lewis - SOC Interface (Phase 2)</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
-</head><body class='stealth'>
+</head>
+<body class='stealth'>
+<div id='matrix-bg'></div>
 <header class='topbar'>
 <h1>🛰️ Paul Lewis — SOC Cybersecurity Portfolio</h1>
-<button id='modeToggle' onclick='toggleMode()'>Toggle Mode</button>
+<button onclick='toggleMode()'>Mode</button>
 </header>
 <main>
 <section class='dashboard-intro'>
-<h2>Stealth Black ICE Mode</h2>
-<p>Advanced SOC dashboard interface with neon pulse bars, holographic cards, and security‑themed UI.</p>
+<h2>Phase 2 Enhancements Enabled</h2>
+<p>Radar grid, alert ticker, matrix packet stream, hologram panel.</p>
 </section>
+<div class='alert-ticker'>
+<span>⚠️ ALERT: Suspicious login detected — IP flagged as high‑risk...</span>
+</div>
 <section class='grid-panels'>
-<div class='panel'><h3>📊 SIEM Feed</h3><p>Live-style telemetry panel.</p></div>
-<div class='panel'><h3>🛡️ Threat Intel</h3><p>Threat objects & signatures.</p></div>
-<div class='panel'><h3>🚨 Alerts</h3><p>Simulated SOC queue.</p></div>
-<div class='panel'><h3>📁 Projects</h3><p>CTF, IR, GRC and more.</p></div>
+<div class='panel radar'><h3>🛰️ Radar Grid</h3><canvas id='radar'></canvas></div>
+<div class='panel hologram'><h3>🧊 Hologram Cube</h3><div id='holo'></div></div>
+<div class='panel stream'><h3>💾 Packet Stream</h3><pre id='streamText'></pre></div>
+<div class='panel'><h3>📁 Projects</h3><p>CTF • IR • SIEM • GRC • Cloud • Scripts</p></div>
 </section>
 </main>
-<footer><p>© Paul Lewis — Advanced SOC Interface</p></footer>
-</body></html>
+<footer><p>© Paul Lewis — Phase 2 SOC Interface</p></footer>
+</body>
+</html>
