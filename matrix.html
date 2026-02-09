@@ -1,28 +1,24 @@
 
 <!DOCTYPE html><html lang='en'><head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Matrix - Advanced SOC System</title>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Matrix Stream</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
 <script src='matrix.js' defer></script>
 </head>
 <body class='blackice'>
 <header>
-  <h1>Matrix Module</h1>
+  <h1>💾 Matrix Packet Stream</h1>
   <nav>
     <a href='index.html'>Home</a>
     <a href='terminal.html'>Terminal</a>
-    <a href='threatmap.html'>Threat Map</a>
-    <a href='dashboard.html'>Dashboard</a>
-    <a href='aiops.html'>AI‑Ops</a>
   </nav>
   <button onclick='toggleTheme()'>Toggle Hybrid Mode</button>
 </header>
 <main>
-  <h2>Matrix System</h2>
-  <p>Click button below to activate this system:</p>
-  <button onclick='activate()'>Activate Module</button>
-  <div id='moduleArea'></div>
+  <div class='panel'>
+    <button onclick='activate()'>Start Stream</button>
+    <canvas id='mx' width='900' height='420' style='width:100%;max-width:900px'></canvas>
+  </div>
 </main>
 </body></html>

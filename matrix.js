@@ -1,1 +1,3 @@
-function activate(){document.getElementById('moduleArea').innerHTML='<p>Matrix system activated.</p>';}
+
+let mctx, cols, drops, running=false;
+function activate(){ if(running) return; running=true; const c=document.getElementById('mx'); mctx=c.getContext('2d'); const w=c.width, h=c.height; const font=14; cols=Math.floor(w/font); drops=Array(cols).fill(1); (function loop(){ if(!running) return; mctx.fillStyle='rgba(0,0,0,0.06)'; mctx.fillRect(0,0,w,h); mctx.fillStyle='#00eaff'; mctx.font=font+'px monospace'; for(let i=0;i<drops.length;i++){ const txt = Math.random()>0.5? rand(0,9): String.fromCharCode(65+rand(0,25)); mctx.fillText(txt, i*font, drops[i]*font); if(drops[i]*font>h && Math.random()>0.975) drops[i]=0; drops[i]++; } requestAnimationFrame(loop); })(); }

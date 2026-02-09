@@ -1,28 +1,29 @@
 
 <!DOCTYPE html><html lang='en'><head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Widgets - Advanced SOC System</title>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Widgets</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
-<script src='widgets.js' defer></script>
 </head>
 <body class='blackice'>
 <header>
-  <h1>Widgets Module</h1>
+  <h1>🧩 Widgets Index</h1>
   <nav>
     <a href='index.html'>Home</a>
-    <a href='terminal.html'>Terminal</a>
-    <a href='threatmap.html'>Threat Map</a>
     <a href='dashboard.html'>Dashboard</a>
-    <a href='aiops.html'>AI‑Ops</a>
+    <a href='radar.html'>Radar</a>
+    <a href='matrix.html'>Matrix</a>
+    <a href='alerts.html'>Alerts</a>
+    <a href='hologram.html'>Hologram</a>
   </nav>
   <button onclick='toggleTheme()'>Toggle Hybrid Mode</button>
 </header>
 <main>
-  <h2>Widgets System</h2>
-  <p>Click button below to activate this system:</p>
-  <button onclick='activate()'>Activate Module</button>
-  <div id='moduleArea'></div>
+  <div class='grid cols-2'>
+    <div class='card'><h3>🛰️ Radar Sweep</h3><p>Subtle SOC radar sweep with neon sweep wedge and blips.</p><a class='btn' href='radar.html'>Open</a></div>
+    <div class='card'><h3>💾 Matrix Stream</h3><p>Matrix‑style packet stream visualizer. User‑activated.</p><a class='btn' href='matrix.html'>Open</a></div>
+    <div class='card'><h3>🚨 Alerts Ticker</h3><p>Scrolling alert feed (Start/Stop controls).</p><a class='btn' href='alerts.html'>Open</a></div>
+    <div class='card'><h3>🧊 Hologram</h3><p>3D rotating cube with neon glow.</p><a class='btn' href='hologram.html'>Open</a></div>
+  </div>
 </main>
 </body></html>

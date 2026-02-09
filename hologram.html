@@ -1,28 +1,24 @@
 
 <!DOCTYPE html><html lang='en'><head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Hologram - Advanced SOC System</title>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Hologram</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
 <script src='hologram.js' defer></script>
 </head>
 <body class='blackice'>
 <header>
-  <h1>Hologram Module</h1>
+  <h1>🧊 Hologram Object</h1>
   <nav>
     <a href='index.html'>Home</a>
     <a href='terminal.html'>Terminal</a>
-    <a href='threatmap.html'>Threat Map</a>
-    <a href='dashboard.html'>Dashboard</a>
-    <a href='aiops.html'>AI‑Ops</a>
   </nav>
   <button onclick='toggleTheme()'>Toggle Hybrid Mode</button>
 </header>
 <main>
-  <h2>Hologram System</h2>
-  <p>Click button below to activate this system:</p>
-  <button onclick='activate()'>Activate Module</button>
-  <div id='moduleArea'></div>
+  <div class='panel' style='text-align:center'>
+    <button onclick='activate()'>Start Hologram</button>
+    <div id='cube' style='margin:20px auto; width:160px; height:160px; perspective:600px'></div>
+  </div>
 </main>
 </body></html>

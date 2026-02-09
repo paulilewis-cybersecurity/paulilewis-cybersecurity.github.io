@@ -1,18 +1,16 @@
 
 <!DOCTYPE html><html lang='en'><head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Terminal - Advanced SOC System</title>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Terminal — SOC Emulator</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
 <script src='terminal.js' defer></script>
 </head>
 <body class='blackice'>
 <header>
-  <h1>Terminal Module</h1>
+  <h1>📟 SOC Terminal Emulator</h1>
   <nav>
     <a href='index.html'>Home</a>
-    <a href='terminal.html'>Terminal</a>
     <a href='threatmap.html'>Threat Map</a>
     <a href='dashboard.html'>Dashboard</a>
     <a href='aiops.html'>AI‑Ops</a>
@@ -20,9 +18,12 @@
   <button onclick='toggleTheme()'>Toggle Hybrid Mode</button>
 </header>
 <main>
-  <h2>Terminal System</h2>
-  <p>Click button below to activate this system:</p>
-  <button onclick='activate()'>Activate Module</button>
-  <div id='moduleArea'></div>
+  <div class='panel'>
+    <div class='row'>
+      <button onclick='activateTerminal()'>Activate Terminal</button>
+      <span>Type <code>help</code> then Enter</span>
+    </div>
+    <div id='terminal' class='moduleArea' style='min-height:320px'></div>
+  </div>
 </main>
 </body></html>

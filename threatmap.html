@@ -1,28 +1,30 @@
 
 <!DOCTYPE html><html lang='en'><head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Threatmap - Advanced SOC System</title>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Threat Map</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
 <script src='threatmap.js' defer></script>
 </head>
 <body class='blackice'>
 <header>
-  <h1>Threatmap Module</h1>
+  <h1>🗺️ Threat Map</h1>
   <nav>
     <a href='index.html'>Home</a>
     <a href='terminal.html'>Terminal</a>
-    <a href='threatmap.html'>Threat Map</a>
     <a href='dashboard.html'>Dashboard</a>
     <a href='aiops.html'>AI‑Ops</a>
   </nav>
   <button onclick='toggleTheme()'>Toggle Hybrid Mode</button>
 </header>
 <main>
-  <h2>Threatmap System</h2>
-  <p>Click button below to activate this system:</p>
-  <button onclick='activate()'>Activate Module</button>
-  <div id='moduleArea'></div>
+  <div class='panel'>
+    <div class='row'>
+      <button onclick='activate()'>Activate Map</button>
+      <button onclick='addBurst()'>Add Attack Burst</button>
+      <span class='severity sev-high'>DEMO DATA</span>
+    </div>
+    <canvas id='map' width='1000' height='520' style='width:100%;max-width:1000px;'></canvas>
+  </div>
 </main>
 </body></html>
