@@ -1,17 +1,2 @@
 
-:root { --bg:#0d1117; --fg:#c9d1d9; --card:#161b22; --muted:#8b949e; --accent:#58a6ff; --panel:#21262d; }
-.light { --bg:#ffffff; --fg:#0f172a; --card:#f5f7fb; --muted:#5b6470; --accent:#2563eb; --panel:#eef2f7; }
-body { margin:0; font-family:system-ui; background:var(--bg); color:var(--fg); transition:.3s; }
-header { background:#161b22; padding:16px; position:sticky; top:0; z-index:10; animation:slide-down .6s ease }
-@keyframes slide-down { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
-.hero { animation:fade-in .8s ease; background:var(--panel); margin:20px; padding:40px; border-radius:10px; text-align:center }
-.fade-in { animation:fade-in 1.2s ease }
-@keyframes fade-in { from {opacity:0;} to {opacity:1;} }
-.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; padding:20px }
-.card { background:var(--card); padding:20px; border-radius:10px; border:1px solid #30363d; transition:.3s; transform:translateY(0); }
-.card:hover { transform:translateY(-5px); border-color:var(--accent); box-shadow:0 0 10px #0006; }
-.pop { animation:pop .4s ease; }
-@keyframes pop { 0%{transform:scale(.95);} 100%{transform:scale(1);} }
-.btn { padding:10px 14px; background:var(--accent); border-radius:8px; text-decoration:none; color:#000; font-weight:600; transition:.2s; }
-.btn:hover { filter:brightness(1.2); }
-a { color:var(--accent); }
+:root{--bg:#000;--fg:#c9d1d9;--accent:#00eaff;--accent2:#ff0080;--card:#0a0a0a;--panel:#111;--glow:0 0 10px var(--accent);}body{margin:0;background:var(--bg);color:var(--fg);font-family:Consolas,monospace;}h1,h2,h3{text-shadow:0 0 8px var(--accent);} .topbar{padding:20px;background:#050505;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--accent);}button{background:var(--panel);color:var(--accent);border:1px solid var(--accent);padding:6px 12px;border-radius:5px;cursor:pointer;}button:hover{box-shadow:var(--glow);} .dashboard-intro{text-align:center;padding:40px;} .grid-panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:20px;} .panel{background:var(--panel);padding:20px;border-radius:10px;border:1px solid var(--accent);transition:.3s;} .panel:hover{transform:translateY(-5px);box-shadow:0 0 15px var(--accent);} .stealth{animation:fadein 1s ease;} @keyframes fadein{from{opacity:0;}to{opacity:1;}}

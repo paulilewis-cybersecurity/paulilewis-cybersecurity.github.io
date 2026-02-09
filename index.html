@@ -1,46 +1,25 @@
 
 <!DOCTYPE html><html lang='en'><head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>
-<title>Paul Lewis - Cybersecurity Portfolio</title>
+<title>Paul Lewis - SOC Cybersecurity Portfolio</title>
 <link rel='stylesheet' href='style.css'>
 <script src='theme.js' defer></script>
-</head><body>
-<header>
-<div class='brand'>
-<h1>🛡️ Paul Lewis — Cybersecurity Portfolio</h1>
-<button onclick='toggleTheme()' id='themeToggle'>🌓</button>
-</div>
-<nav>
-<a href='index.html'>Home</a>
-<a href='ctf.html'>CTF</a>
-<a href='ir.html'>Incident Response</a>
-<a href='siem.html'>SIEM</a>
-<a href='vuln.html'>Vulnerability</a>
-<a href='grc.html'>GRC</a>
-<a href='scripts.html'>Scripts</a>
-<a href='cloud.html'>Cloud</a>
-<a href='blog.html'>Blog</a>
-</nav>
+</head><body class='stealth'>
+<header class='topbar'>
+<h1>🛰️ Paul Lewis — SOC Cybersecurity Portfolio</h1>
+<button id='modeToggle' onclick='toggleMode()'>Toggle Mode</button>
 </header>
 <main>
-<section class='hero fade-in'>
-<h2>🔐 Cybersecurity Analyst in Progress</h2>
-<p>Showcasing SOC, IR, SIEM, Vulnerability, GRC and Cloud Security projects.</p>
-<div class='cta'>
-<a class='btn' href='siem.html'>View SIEM Investigations</a>
-<a class='btn outline' href='ir.html'>See Incident Reports</a>
-</div>
+<section class='dashboard-intro'>
+<h2>Stealth Black ICE Mode</h2>
+<p>Advanced SOC dashboard interface with neon pulse bars, holographic cards, and security‑themed UI.</p>
 </section>
-<section class='cards'>
-<div class='card pop'><h3>🕵️ CTF Writeups</h3><p>Hands‑on challenges showing enumeration & exploitation.</p><a href='ctf.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>🚨 Incident Response</h3><p>Mock IR cases, timeline & evidence handling.</p><a href='ir.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>📊 SIEM Analysis</h3><p>Threat hunting & correlation.</p><a href='siem.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>🛠 Vulnerability Assessments</h3><p>Scanning & remediation reporting.</p><a href='vuln.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>📜 GRC</h3><p>Risk assessments & policy samples.</p><a href='grc.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>💻 Scripts</h3><p>PowerShell & Python automation.</p><a href='scripts.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>☁️ Cloud Security</h3><p>Azure identity & log investigations.</p><a href='cloud.html' class='link'>Explore</a></div>
-<div class='card pop'><h3>📝 Blog</h3><p>Write-ups on security concepts.</p><a href='blog.html' class='link'>Explore</a></div>
+<section class='grid-panels'>
+<div class='panel'><h3>📊 SIEM Feed</h3><p>Live-style telemetry panel.</p></div>
+<div class='panel'><h3>🛡️ Threat Intel</h3><p>Threat objects & signatures.</p></div>
+<div class='panel'><h3>🚨 Alerts</h3><p>Simulated SOC queue.</p></div>
+<div class='panel'><h3>📁 Projects</h3><p>CTF, IR, GRC and more.</p></div>
 </section>
 </main>
-<footer><p>© Paul Lewis — Cybersecurity Portfolio</p></footer>
+<footer><p>© Paul Lewis — Advanced SOC Interface</p></footer>
 </body></html>
