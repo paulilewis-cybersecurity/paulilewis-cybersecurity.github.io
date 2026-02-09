@@ -1,0 +1,117 @@
+[
+  {
+    "title": "SOC Investigation \u2014 Impossible Travel (M365 + Wazuh)",
+    "type": "SIEM",
+    "tags": [
+      "SIEM",
+      "M365",
+      "Wazuh",
+      "Incident Analysis"
+    ],
+    "date": "2026-02-09",
+    "description": "Investigated risky sign-ins, correlated MFA failures and user agent anomalies; recommended Conditional Access & session revoke.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/siem_impossible_travel.png"
+  },
+  {
+    "title": "Incident Response \u2014 Suspicious PowerShell (LOLBins)",
+    "type": "Incident Response",
+    "tags": [
+      "IR",
+      "Windows",
+      "PowerShell",
+      "Defender"
+    ],
+    "date": "2026-02-09",
+    "description": "Decoded base64 payload, isolated host, removed persistence, restored from gold image; added ASR recommendations.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/ir_powershell.png"
+  },
+  {
+    "title": "CTF \u2014 TryHackMe: Blue (EternalBlue)",
+    "type": "CTF",
+    "tags": [
+      "CTF",
+      "SMB",
+      "MS17-010"
+    ],
+    "date": "2026-02-09",
+    "description": "Enumeration \u2192 exploit (EternalBlue) \u2192 post\u2011exploitation; notes on patch management and network segmentation.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/thm_blue.png"
+  },
+  {
+    "title": "Vulnerability Assessment \u2014 Linux Web Server",
+    "type": "Vulnerability",
+    "tags": [
+      "Nmap",
+      "OpenVAS",
+      "Apache"
+    ],
+    "date": "2026-02-09",
+    "description": "Outdated Apache & directory listing exposure; remediation with patches and config hardening.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/vuln_linux_web.png"
+  },
+  {
+    "title": "GRC \u2014 M365 Risk Assessment (NIST/ISO/CIS)",
+    "type": "GRC",
+    "tags": [
+      "GRC",
+      "NIST",
+      "ISO27001",
+      "CIS"
+    ],
+    "date": "2026-02-09",
+    "description": "Identity risks, external sharing, legacy auth; controls mapped to NIST AC\u20111/AC\u20112, ISO A.9, CIS IG1/IG2.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/grc_m365.png"
+  },
+  {
+    "title": "Scripting \u2014 PowerShell AD Audit + Python EVTX Parser",
+    "type": "Scripting",
+    "tags": [
+      "PowerShell",
+      "Python",
+      "Audit"
+    ],
+    "date": "2026-02-09",
+    "description": "PowerShell export of account posture & Python 4625 parser to surface failed logins with IPs.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/scripts.png"
+  },
+  {
+    "title": "Cloud \u2014 Azure Risky Sign\u2011In Analysis",
+    "type": "Cloud",
+    "tags": [
+      "Azure",
+      "Identity Protection",
+      "Conditional Access"
+    ],
+    "date": "2026-02-09",
+    "description": "Detected TOR exit node sign\u2011ins, enforced block legacy auth and risk\u2011based MFA.",
+    "view": "#",
+    "repo": "#",
+    "pdf": "#",
+    "blog": "#",
+    "cover": "images/cloud_risky_signin.png"
+  }
+]

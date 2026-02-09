@@ -1,0 +1,49 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Projects — Cybersecurity Portfolio</title>
+  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href='style_addon.css'>
+  <script src='theme.js' defer></script>
+  <script src='projects.js' defer></script>
+</head>
+<body class='blackice'>
+<header>
+  <h1>📁 Projects</h1>
+  <nav>
+    <a href='index.html'>Home</a>
+    <a href='terminal.html'>Terminal</a>
+    <a href='threatmap.html'>Threat Map</a>
+    <a href='dashboard.html'>Dashboard</a>
+    <a href='aiops.html'>AI‑Ops</a>
+  </nav>
+  <button onclick='toggleTheme()'>Toggle Hybrid Mode</button>
+</header>
+<main>
+  <div class='panel'>
+    <div class='row'>
+      <input id='q' class='mono' placeholder='Search (e.g., "SIEM", "IR", "Azure")' oninput='applyFilters()' style='flex:1'>
+      <select id='type' onchange='applyFilters()'>
+        <option value=''>All Types</option>
+        <option>CTF</option>
+        <option>Incident Response</option>
+        <option>SIEM</option>
+        <option>Vulnerability</option>
+        <option>GRC</option>
+        <option>Scripting</option>
+        <option>Cloud</option>
+        <option>Blog</option>
+      </select>
+      <select id='sort' onchange='applyFilters()'>
+        <option value='date_desc'>Newest</option>
+        <option value='date_asc'>Oldest</option>
+        <option value='title_asc'>Title A→Z</option>
+      </select>
+    </div>
+  </div>
+  <div id='grid' class='grid cols-3' style='margin-top:14px'></div>
+</main>
+</body>
+</html>
