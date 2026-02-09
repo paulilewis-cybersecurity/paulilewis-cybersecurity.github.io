@@ -1,0 +1,1 @@
+function activate(){document.getElementById('moduleArea').innerHTML='<p>Terminal system activated.</p>';}
